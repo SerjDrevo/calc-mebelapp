@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drevoline - калькулятор мебельного щита</title>
+    <meta name="description" content="Производим: брус калиброванный, вагонку, блок-хаус, доску пола и другие пиломатериалы. Изготавливаем на заказ: корпусную и дачную мебель, беседки, бани и сауны. Доставка по Украине." /><meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="https://drevoline.com.ua" rel="canonical" /><link href="https://drevoline.com.ua/image/catalog/LOGO.jpg" rel="icon" /><link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <div class="calcheader">
+        <nav>
+            <ul class="calcmenu">
+                <li class="calcmenu__item">
+                    <a id="mainactive" class="calcmenu__item-link" href="https://drevoline.com.ua">Вернутся на
+                        главную</a>
+                </li>
+                <li class="calcmenu__item">
+                    <a class="calcmenu__item-link" href="https://goo.gl/maps/xunfNBU8qTK3uL1V8">Отзывы Google</a>
+                </li>
+                <li class="calcmenu__item">
+                    <a class="calcmenu__item-link" href="https://drevoline.com.ua/catalog/calc_obr/calc.html">Просчёт
+                        доски/бруса</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="calclogobox">
+        <div class="calclogo">
+            <a href="https://drevoline.com.ua/"><img src="img/drevoline-logo2.png" alt=""></a>
+        </div>
+        <div class="calccontactbox">
+            <div class="calconbox">
+            </div>
+        </div>
+        <div class="calcphone">
+            <a href="tel:+380951093428">+38 (095) 109-34-28</a>
+            <a href="tel:+380989209410">+38 (098) 920-94-10</a>
+        </div>
+    </div>
+
+    <section class="calc__wrapper">
+        <div class="calc__block calc__species">
+            <p class="calc__title type__title">Порода дерева</p>
+            <select class="calc__select type__species">
+                <option value="Сосна">Сосна</option>
+                <option value="Липа">Липа</option>
+                <option value="Ольха">Ольха</option>
+                <option value="Клён">Клён </option>
+                <option value="Ясень">Ясень</option>
+                <option value="Дуб">Дуб</option>
+                <option value="Лиственница">Лиственница</option>
+                <option value="Бук">Бук</option>
+                <option value="Термо-сосна">Термо-сосна</option>
+                <option value="Термо-ясень">Термо-ясень</option>
+            </select>
+        </div>
+        <div class="calc__block calc__construction">
+            <p class="calc__title construction__title">Конструкция</p>
+            <select class="calc__select construction__select">
+                <option value="Цельноламельная">Цельноламельная</option>
+                <option value="Срощеная">Срощеная</option>
+            </select>
+        </div>
+
+        <div class="calc__block calc__sort">
+            <p class="calc__title sort__title">Сорт</p>
+            <select class="calc__select sort__select">
+                <option value="А/В">А/В</option>
+                <option value="В/С">В/С</option>
+            </select>
+
+        </div>
+
+        <div class="calc__block calc__thick">
+            <p class="calc__title thick__title">Толщина (мм.)</p>
+            <select class="calc__select thick__select">
+                <option value="18">18</option>
+                <option value="38">38</option>
+                <option value="30">30</option>
+            </select>
+        </div>
+        <div class="calc__block calc__width2">
+            <p class="calc__title width2__title">Ширина (мм.)</p>
+            <input class="width2__input calc__input" type="number" placeholder="Введите количество">
+            <p class="block__error block__error--width">Заполните Поле!</p>
+        </div>
+
+        <div class="calc__block calc__length2">
+            <p class="calc__title length2__title">Длина (мм.)</p>
+            <input class="length2__input calc__input" type="number" placeholder="Введите количество">
+            <p class="block__error block__error--length">Заполните Поле!</p>
+        </div>
+
+        <div class="calc__block calc__quantity2">
+            <p class="calc__title quantity2__title">Количество (шт.)</p>
+            <input class="quantity2__input calc__input" type="number" placeholder="Введите количество">
+            <p class="block__error block__error--quantity">Заполните Поле!</p>
+        </div>
+        <div class="calc__block calc__antiseptic">
+            <p class="calc__title antiseptic__title">Обработка кромки</p>
+            <div class="intisemp__wrapper">
+                <input class="antiseptic__checkbox korm__checkbox" type="checkbox">
+            </div>
+        </div>
+
+        <div class="calc__block calc__add">
+            <button class="btn__func add__btn">Добавить</button>
+        </div>
+
+    </section>
+
+    <div class="calc__note">
+        Мы оказываем услуги по порезке мебельного щита по вашей деталировке.
+        <b>Стоимость</b> - 10 грн. м.пог.
+        <b>Ширина</b> до 800мм и не менее 80мм.
+        <b>Другие размеры по ширине</b> +30%, кроме складских позиций. Услуги шпонирования от 250грн/м2 одна сторона
+        (кромка 18мм - от 20грн/м.п; 38мм - от 40грн/м.п
+
+    </div>
+
+
+
+    <!-- ////////////////////////  -->
+    <div class="result__container">
+        <table class="result__wrapper">
+            <tbody>
+                <tr class="result__header">
+                    <th class="header__block header__thickness">Порода дерева</th>
+                    <th class="header__block header__type">Конструкция материала</th>
+                    <th class="header__block header__width">Сорт</th>
+                    <th class="header__block header__length">Толщина (мм.)</td>
+                    <th class="header__block header__volume">Ширина (мм.)</td>
+                    <th class="header__block header__price-volume">Длина (мм.)</td>
+                    <th class="header__block header__quantity">Кол-во (шт)</td>
+                    <th class="header__block header__price-mp">м²</td>
+                    <th class="header__block header__antiseptic">Стоимость м²</td>
+                    <th class="header__block header__antiseptic">Сумма</td>
+                    <th class="header__block header__delete">&nbsp;</td>
+                </tr>
+                <div class="result-row__wrapper">
+
+                </div>
+
+                <tr class="result__body result__body--total">
+                    <td class="body__block result__species"></td>
+                    <td class="body__block result__construction"></td>
+                    <td class="body__block result__sort"></td>
+                    <td class="body__block result__thick"></td>
+                    <td class="body__block result__width"></td>
+                    <td class="body__block result__length"></td>
+                    <td class="body__block result__quantity"></td>
+                    <td class="body__block result__m2"></td>
+                    <td class="body__block result__totalCost"></td>
+                    <td class="body__block result__delete-row"></td>
+
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <script src="js/common.js?12222"></script>
+</body>
+
+</html>
